@@ -1,0 +1,400 @@
+/* =====================================
+   TOPO DA PÁGINA
+===================================== */
+
+.topo-edital{
+
+    margin-top:80px;
+
+    background:linear-gradient(135deg,#4B1F78,#6A1B9A);
+
+    color:white;
+
+    text-align:center;
+
+    padding:70px 20px;
+
+}
+
+.topo-edital h1{
+
+    font-size:42px;
+
+    margin-bottom:15px;
+
+}
+
+.topo-edital p{
+
+    font-size:18px;
+
+}
+
+/* =====================================
+   FILTROS
+===================================== */
+
+.filtros{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:40px auto;
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.filtros input,
+.filtros select{
+
+    padding:14px;
+
+    border:1px solid #ccc;
+
+    border-radius:10px;
+
+    min-width:220px;
+
+    font-size:15px;
+
+}
+
+.filtros button{
+
+    background:#4B1F78;
+
+    color:white;
+
+    border:none;
+
+    padding:14px 30px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.filtros button:hover{
+
+    background:#321052;
+
+}
+
+/* =====================================
+   CARDS DOS EDITAIS
+===================================== */
+
+.lista-editais{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+
+    gap:30px;
+
+    margin-bottom:70px;
+
+}
+
+.edital-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.edital-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+
+}
+
+.cabecalho{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+}
+
+.cabecalho h2{
+
+    color:#4B1F78;
+
+    font-size:24px;
+
+}
+
+/* =====================================
+   STATUS
+===================================== */
+
+.aberto{
+
+    background:#28a745;
+
+    color:white;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+}
+
+.analise{
+
+    background:#ffc107;
+
+    color:black;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+}
+
+.encerrado{
+
+    background:#dc3545;
+
+    color:white;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+}
+
+/* =====================================
+   BOTÕES
+===================================== */
+
+.acoes{
+
+    margin-top:25px;
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.acoes button{
+
+    flex:1;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.acoes button:first-child{
+
+    background:#4B1F78;
+
+    color:white;
+
+}
+
+.acoes button:first-child:hover{
+
+    background:#321052;
+
+}
+
+.acoes button:last-child{
+
+    background:#17a2b8;
+
+    color:white;
+
+}
+
+.acoes button:last-child:hover{
+
+    background:#117a8b;
+
+}
+
+/* =====================================
+   TABELA
+===================================== */
+
+.tabela{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:70px auto;
+
+}
+
+.tabela h2{
+
+    color:#4B1F78;
+
+    margin-bottom:25px;
+
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:white;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+thead{
+
+    background:#4B1F78;
+
+    color:white;
+
+}
+
+th{
+
+    padding:18px;
+
+    text-align:left;
+
+}
+
+td{
+
+    padding:18px;
+
+    border-bottom:1px solid #ececec;
+
+}
+
+tbody tr:hover{
+
+    background:#f4f4f4;
+
+}
+
+/* =====================================
+   RODAPÉ
+===================================== */
+
+footer{
+
+    margin-top:80px;
+
+    background:#2f0d56;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+}
+
+/* =====================================
+   RESPONSIVO
+===================================== */
+
+@media(max-width:768px){
+
+.filtros{
+
+flex-direction:column;
+
+}
+
+.filtros input,
+.filtros select,
+.filtros button{
+
+width:100%;
+
+}
+
+.lista-editais{
+
+grid-template-columns:1fr;
+
+}
+
+.cabecalho{
+
+flex-direction:column;
+
+gap:10px;
+
+align-items:flex-start;
+
+}
+
+.acoes{
+
+flex-direction:column;
+
+}
+
+table{
+
+display:block;
+
+overflow-x:auto;
+
+}
+
+}
