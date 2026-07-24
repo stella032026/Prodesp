@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Editais | PRODESP</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet" href="css/edital.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/4ad4d5d7d2.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<img src="img/logo-prodesp.png" alt="Logo Prodesp">
+
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Início</a></li>
+
+<li><a href="edital.html" class="ativo">Editais</a></li>
+
+<li><a href="contato.html">Contato</a></li>
+
+<li><a href="login.html">Entrar</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="topo-edital">
+
+<h1>Portal de Editais</h1>
+
+<p>Consulte os editais disponíveis da PRODESP.</p>
+
+</section>
+
+<section class="filtros">
+
+<input
+type="text"
+id="buscar"
+placeholder="Pesquisar edital...">
+
+<select id="categoria">
+
+<option value="">Todas as categorias</option>
+
+<option>Tecnologia</option>
+
+<option>Infraestrutura</option>
+
+<option>Segurança</option>
+
+<option>Cloud</option>
+
+</select>
+
+<select id="status">
+
+<option value="">Todos os status</option>
+
+<option>Aberto</option>
+
+<option>Encerrado</option>
+
+<option>Em análise</option>
+
+</select>
+
+<button onclick="filtrarEditais()">
+
+Pesquisar
+
+</button>
+
+</section>
+
+<section class="lista-editais">
+
+<div class="edital-card">
+
+<div class="cabecalho">
+
+<h2>Edital 001/2026</h2>
+
+<span class="aberto">
+
+Aberto
+
+</span>
+
+</div>
+
+<p>
+
+<strong>Categoria:</strong>
+
+Tecnologia
+
+</p>
+
+<p>
+
+<strong>Publicação:</strong>
+
+24/07/2026
+
+</p>
+
+<p>
+
+<strong>Encerramento:</strong>
+
+30/08/2026
+
+</p>
+
+<p>
+
+Contratação para desenvolvimento de soluções digitais.
+
+</p>
+
+<div class="acoes">
+
+<button>
+
+Visualizar
+
+</button>
+
+<button>
+
+Baixar PDF
+
+</button>
+
+</div>
+
+</div>
+
+<div class="edital-card">
+
+<div class="cabecalho">
+
+<h2>Edital 002/2026</h2>
+
+<span class="analise">
+
+Em análise
+
+</span>
+
+</div>
+
+<p>
+
+<strong>Categoria:</strong>
+
+Infraestrutura
+
+</p>
+
+<p>
+
+<strong>Publicação:</strong>
+
+15/07/2026
+
+</p>
+
+<p>
+
+<strong>Encerramento:</strong>
+
+20/08/2026
+
+</p>
+
+<p>
+
+Modernização da infraestrutura de servidores.
+
+</p>
+
+<div class="acoes">
+
+<button>
+
+Visualizar
+
+</button>
+
+<button>
+
+Baixar PDF
+
+</button>
+
+</div>
+
+</div>
+
+<div class="edital-card">
+
+<div class="cabecalho">
+
+<h2>Edital 003/2026</h2>
+
+<span class="encerrado">
+
+Encerrado
+
+</span>
+
+</div>
+
+<p>
+
+<strong>Categoria:</strong>
+
+Segurança
+
+</p>
+
+<p>
+
+<strong>Publicação:</strong>
+
+01/06/2026
+
+</p>
+
+<p>
+
+<strong>Encerramento:</strong>
+
+30/06/2026
+
+</p>
+
+<p>
+
+Aquisição de soluções de segurança da informação.
+
+</p>
+
+<div class="acoes">
+
+<button>
+
+Visualizar
+
+</button>
+
+<button>
+
+Baixar PDF
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="tabela">
+
+<h2>Resumo dos Editais</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Número</th>
+
+<th>Categoria</th>
+
+<th>Status</th>
+
+<th>Publicação</th>
+
+<th>Encerramento</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>001/2026</td>
+
+<td>Tecnologia</td>
+
+<td>Aberto</td>
+
+<td>24/07/2026</td>
+
+<td>30/08/2026</td>
+
+</tr>
+
+<tr>
+
+<td>002/2026</td>
+
+<td>Infraestrutura</td>
+
+<td>Em análise</td>
+
+<td>15/07/2026</td>
+
+<td>20/08/2026</td>
+
+</tr>
+
+<tr>
+
+<td>003/2026</td>
+
+<td>Segurança</td>
+
+<td>Encerrado</td>
+
+<td>01/06/2026</td>
+
+<td>30/06/2026</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 PRODESP - Portal de Editais
+
+</p>
+
+</footer>
+
+<script src="js/edital.js"></script>
+
+</body>
+
+</html>
