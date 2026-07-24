@@ -1,0 +1,331 @@
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:linear-gradient(rgba(75,31,120,.75),
+    rgba(75,31,120,.75)),
+    url("../img/fundo-login.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.container{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:20px;
+
+}
+
+/* ==========================================
+   LOGIN BOX
+========================================== */
+
+.login-box{
+
+    width:100%;
+
+    max-width:450px;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:20px;
+
+    padding:40px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.3);
+
+    color:white;
+
+    animation:fade .8s ease;
+
+}
+
+/* ==========================================
+   LOGO
+========================================== */
+
+.logo{
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+}
+
+.logo img{
+
+    width:110px;
+
+}
+
+/* ==========================================
+   TÍTULOS
+========================================== */
+
+.login-box h1{
+
+    text-align:center;
+
+    margin-bottom:10px;
+
+    font-size:30px;
+
+}
+
+.login-box p{
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+}
+
+/* ==========================================
+   CAMPOS
+========================================== */
+
+.campo{
+
+    margin-bottom:20px;
+
+}
+
+.campo label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:500;
+
+}
+
+.campo input{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-size:15px;
+
+    outline:none;
+
+}
+
+/* ==========================================
+   SENHA
+========================================== */
+
+.senha{
+
+    position:relative;
+
+}
+
+.senha i{
+
+    position:absolute;
+
+    right:15px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    cursor:pointer;
+
+    color:#4B1F78;
+
+}
+
+/* ==========================================
+   OPÇÕES
+========================================== */
+
+.opcoes{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+    font-size:14px;
+
+}
+
+.opcoes a{
+
+    color:#FFD54F;
+
+    text-decoration:none;
+
+}
+
+.opcoes a:hover{
+
+    text-decoration:underline;
+
+}
+
+/* ==========================================
+   BOTÕES
+========================================== */
+
+.btn-login{
+
+    width:100%;
+
+    padding:15px;
+
+    background:#FFD54F;
+
+    color:#4B1F78;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.btn-login:hover{
+
+    background:white;
+
+}
+
+.btn-cadastro{
+
+    display:block;
+
+    text-align:center;
+
+    margin-top:15px;
+
+    padding:14px;
+
+    border:2px solid #FFD54F;
+
+    color:#FFD54F;
+
+    text-decoration:none;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+}
+
+.btn-cadastro:hover{
+
+    background:#FFD54F;
+
+    color:#4B1F78;
+
+}
+
+/* ==========================================
+   LINHA
+========================================== */
+
+hr{
+
+    margin:30px 0;
+
+    border:none;
+
+    border-top:1px solid rgba(255,255,255,.3);
+
+}
+
+/* ==========================================
+   RESPONSIVO
+========================================== */
+
+@media(max-width:500px){
+
+.login-box{
+
+padding:30px 20px;
+
+}
+
+.login-box h1{
+
+font-size:24px;
+
+}
+
+}
+
+/* ==========================================
+   ANIMAÇÃO
+========================================== */
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
