@@ -1,4 +1,6 @@
-
+/* ===========================
+   RESET
+=========================== */
 
 *{
     margin:0;
@@ -6,468 +8,831 @@
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
-    font-family:'Montserrat', sans-serif;
-    overflow-x:hidden;
-    background:#fff;
+    font-family:'Poppins',sans-serif;
+    background:#f5f7fa;
+    color:#333;
+    line-height:1.6;
 }
 
-/* TOPO GOVERNO */
+/* ===========================
+   CABEÇALHO
+=========================== */
 
-.gov-bar{
-    background:#000;
-    height:70px;
+header{
 
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
+    position:fixed;
 
-    padding:0 40px;
-}
+    top:0;
 
-.gov-logo{
-    display:flex;
-    align-items:center;
-    gap:15px;
-    color:white;
-}
+    left:0;
 
-.sp-box{
-    width:50px;
-    height:35px;
-    background:red;
-    border-radius:5px;
-}
-
-.gov-logo h1{
-    font-size:20px;
-    font-weight:800;
-}
-
-.gov-logo p{
-    font-size:11px;
-}
-
-.accessibility{
-    display:flex;
-    gap:10px;
-}
-
-.accessibility span{
-    width:32px;
-    height:32px;
-
-    border:1px solid #999;
-    border-radius:50%;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    color:white;
-    font-size:14px;
-}
-
-/* MENU */
-
-.menu-bar{
-    background:#5f168e;
-
-    height:85px;
-
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-
-    padding:0 40px;
-}
-
-.brand{
-    display:flex;
-    align-items:center;
-    gap:10px;
-}
-
-.dot{
-    width:16px;
-    height:16px;
-    background:white;
-    border-radius:50%;
-}
-
-.brand h2{
-    color:white;
-    font-size:42px;
-    font-weight:800;
-    font-style:italic;
-}
-
-/* SEARCH */
-
-.search-box{
-    width:55%;
-    position:relative;
-}
-
-.search-box input{
     width:100%;
-    height:48px;
 
-    border:none;
-    border-radius:30px;
+    height:80px;
 
-    padding-left:25px;
+    background:#4B1F78;
 
-    outline:none;
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 8%;
+
+    z-index:999;
+
+    box-shadow:0 4px 10px rgba(0,0,0,.15);
+
+}
+
+.logo img{
+
+    height:55px;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:30px;
+
+}
+
+nav ul li a{
+
+    color:white;
+
+    text-decoration:none;
 
     font-size:16px;
+
+    font-weight:500;
+
+    transition:.3s;
+
 }
 
-/* MENU ICON */
+nav ul li a:hover{
 
-.menu-icon{
-    color:white;
-    font-size:48px;
-    cursor:pointer;
+    color:#FFD54F;
+
 }
 
-/* HERO */
+.btn-login{
 
-.hero{
-    position:relative;
+    background:#FFD54F;
 
-    height:700px;
+    color:#4B1F78;
 
-    background:
-    linear-gradient(rgba(123,59,190,0.65), rgba(123,59,190,0.65)),
-    url('https://www.prodesp.sp.gov.br/wp-content/uploads/2023/01/Capturar.jpg');
+    padding:10px 22px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-login:hover{
+
+    background:white;
+
+}
+
+/* ===========================
+   BANNER
+=========================== */
+
+.banner{
+
+    margin-top:80px;
+
+    height:520px;
+
+    background:linear-gradient(rgba(75,31,120,.75),
+    rgba(75,31,120,.75)),
+    url("../img/banner.jpg");
 
     background-size:cover;
+
     background-position:center;
 
     display:flex;
+
     align-items:center;
-}
 
-/* TEXTO */
+    justify-content:center;
 
-.hero-content{
-    padding-left:100px;
+    text-align:center;
+
     color:white;
-}
-.hero-content:hover{
-        cursor: pointer;
-    transform: scale(1.1);
-}
-.hero-content h1{
-    font-size:95px;
-    font-weight:800;
-    font-style:italic;
-    line-height:0.95;
+
 }
 
-.arrow{
-    display:block;
-    font-size:90px;
-    margin-top:20px;
+.banner-texto{
+
+    max-width:700px;
+
 }
 
-/* CARDS */
+.banner h1{
 
-.cards{
-    position:absolute;
+    font-size:52px;
 
-    bottom:40px;
-    left:50%;
+    margin-bottom:20px;
 
-    transform:translateX(-50%);
+}
 
-    width:90%;
+.banner p{
+
+    font-size:20px;
+
+    margin-bottom:30px;
+
+}
+
+.botao{
+
+    background:#FFD54F;
+
+    color:#4B1F78;
+
+    text-decoration:none;
+
+    padding:15px 35px;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.botao:hover{
 
     background:white;
 
-    border-radius:25px;
-
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-
-    overflow:hidden;
-
-    box-shadow:0 10px 30px rgba(0,0,0,0.2);
 }
 
-.card{
-    padding:35px;
+/* ===========================
+   PESQUISA
+=========================== */
 
-    border-right:1px solid #ddd;
-}
+.pesquisa{
 
-.card:last-child{
-    border-right:none;
-}
+    padding:70px 8%;
 
-.card h3{
-    font-size:24px;
-    margin-bottom:15px;
-}
+    background:white;
 
-.card p{
-    font-size:15px;
-    color:#666;
-    line-height:1.5;
-    margin-bottom:20px;
-}
-
-.card a{
-    text-decoration:none;
-    color:#5f168e;
-    font-weight:700;
-}
-
-/* RESPONSIVO */
-
-@media(max-width:1100px){
-
-    .hero-content h1{
-        font-size:70px;
-    }
-
-    .cards{
-        grid-template-columns:1fr 1fr;
-    }
-}
-
-@media(max-width:700px){
-
-    .gov-bar{
-        padding:0 20px;
-    }
-
-    .menu-bar{
-        padding:0 20px;
-    }
-
-    .search-box{
-        width:45%;
-    }
-
-    .hero{
-        height:900px;
-    }
-
-    .hero-content{
-        padding-left:30px;
-    }
-
-    .hero-content h1{
-        font-size:55px;
-    }
-
-    .cards{
-        width:95%;
-        grid-template-columns:1fr;
-        bottom:20px;
-    }
-
-    .card{
-        border-right:none;
-        border-bottom:1px solid #ddd;
-    }
-
-    .card:last-child{
-        border-bottom:none;
-    }
-}
-
-/* =========================
-   LOGIN PRODESP
-========================= */
-
-.login-page{
-    display:flex;
-    min-height:calc(100vh - 155px);
-}
-
-.login-image{
-    width:45%;
-    overflow:hidden;
-}
-
-.login-image img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-
-    filter:
-    brightness(0.8)
-    sepia(20%)
-    hue-rotate(230deg)
-    saturate(120%);
-}
-
-.login-container{
-    width:55%;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    background:#fff;
-}
-
-.login-box{
-    width:420px;
     text-align:center;
+
 }
 
-.user-icon{
-    width:140px;
-    height:140px;
+.pesquisa h2{
 
-    margin:0 auto 25px;
+    font-size:34px;
 
-    border-radius:50%;
+    color:#4B1F78;
 
-    background:#e5e6ed;
+    margin-bottom:30px;
+
+}
+
+.campo-pesquisa{
 
     display:flex;
-    align-items:center;
+
     justify-content:center;
 
-    font-size:70px;
-    color:#9a9a9a;
+    flex-wrap:wrap;
+
+    gap:15px;
+
 }
 
-.login-box h2{
-    color:#666;
-    font-weight:500;
-    margin-bottom:40px;
+.campo-pesquisa input{
+
+    width:420px;
+
+    max-width:100%;
+
+    padding:15px;
+
+    border:1px solid #ccc;
+
+    border-radius:10px;
+
+    font-size:16px;
+
 }
 
-.input-group{
-    display:flex;
-    align-items:center;
+.campo-pesquisa button{
 
-    gap:12px;
-
-    border-bottom:2px solid #444;
-
-    margin-bottom:25px;
-    padding-bottom:10px;
-}
-
-.input-group span{
-    color:#999;
-    font-size:22px;
-}
-
-.input-group input{
-    width:100%;
-
-    border:none;
-    outline:none;
-
-    font-size:18px;
-}
-
-.forgot{
-    display:block;
-
-    text-align:left;
-
-    color:#5f168e;
-    text-decoration:none;
-
-    margin-bottom:40px;
-
-    font-size:14px;
-}
-
-.login-btn{
-    width:230px;
-    height:55px;
-
-    border:none;
-    border-radius:30px;
-
-    background:#5f168e;
+    background:#4B1F78;
 
     color:white;
 
-    font-size:28px;
-    font-weight:500;
+    border:none;
+
+    padding:15px 30px;
+
+    border-radius:10px;
 
     cursor:pointer;
 
     transition:.3s;
+
 }
 
-.login-btn:hover{
-    background:#4b0f74;
-    transform:translateY(-2px);
+.campo-pesquisa button:hover{
+
+    background:#34145a;
+
 }
 
-.signup-text{
-    margin-top:15px;
+/* ===========================
+   CARDS
+=========================== */
 
-    font-size:13px;
-    color:#666;
+.cards{
+
+    padding:70px 8%;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+
 }
 
-.signup-link{
+.card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
+
+}
+
+.card i{
+
+    font-size:50px;
+
+    color:#4B1F78;
+
+    margin-bottom:20px;
+
+}
+
+.card h3{
+
+    margin-bottom:15px;
+
+    color:#4B1F78;
+
+}
+
+.card p{
+
+    margin-bottom:25px;
+
+}
+
+.card a{
+
     text-decoration:none;
 
-    color:#5f168e;
+    color:white;
 
-    font-size:13px;
-    font-weight:600;
+    background:#4B1F78;
+
+    padding:12px 25px;
+
+    border-radius:8px;
+
+    display:inline-block;
+
+    transition:.3s;
+
 }
 
-/* =========================
-   RESPONSIVO LOGIN
-========================= */
+.card a:hover{
 
-@media(max-width:1000px){
+    background:#34145a;
 
-    .login-page{
-        flex-direction:column;
-    }
+}
+/* ===========================
+   SOBRE A PRODESP
+=========================== */
 
-    .login-image{
-        width:100%;
-        height:300px;
-    }
+.sobre{
 
-    .login-container{
-        width:100%;
-        padding:40px 20px;
-    }
+    display:flex;
 
-    .login-box{
-        width:100%;
-        max-width:420px;
-    }
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:60px;
+
+    padding:80px 8%;
+
+    background:#ffffff;
+
+    flex-wrap:wrap;
+
 }
 
-@media(max-width:600px){
+.sobre .texto{
 
-    .user-icon{
-        width:110px;
-        height:110px;
-        font-size:55px;
+    flex:1;
+
+}
+
+.sobre .texto h2{
+
+    color:#4B1F78;
+
+    font-size:38px;
+
+    margin-bottom:25px;
+
+}
+
+.sobre .texto p{
+
+    font-size:17px;
+
+    margin-bottom:20px;
+
+    text-align:justify;
+
+}
+
+.sobre .texto ul{
+
+    list-style:none;
+
+}
+
+.sobre .texto ul li{
+
+    margin:12px 0;
+
+    font-size:17px;
+
+}
+
+.sobre .imagem{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.sobre img{
+
+    width:100%;
+
+    max-width:520px;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.18);
+
+}
+
+/* ===========================
+   MAPA
+=========================== */
+
+.mapa{
+
+    background:#f4f6fa;
+
+    padding:80px 8%;
+
+    text-align:center;
+
+}
+
+.mapa h2{
+
+    color:#4B1F78;
+
+    font-size:36px;
+
+    margin-bottom:35px;
+
+}
+
+.mapa iframe{
+
+    width:100%;
+
+    height:450px;
+
+    border:none;
+
+    border-radius:20px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
+
+}
+
+/* ===========================
+   RODAPÉ
+=========================== */
+
+footer{
+
+    background:#2f0d56;
+
+    color:white;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:40px;
+
+    padding:60px 8%;
+
+}
+
+footer h3{
+
+    margin-bottom:20px;
+
+    color:#FFD54F;
+
+}
+
+footer p{
+
+    margin-bottom:10px;
+
+}
+
+footer i{
+
+    font-size:30px;
+
+    margin-right:15px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+footer i:hover{
+
+    color:#FFD54F;
+
+}
+
+/* ===========================
+   BOTÃO VOLTAR AO TOPO
+=========================== */
+
+#topo{
+
+    position:fixed;
+
+    bottom:30px;
+
+    right:30px;
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    border:none;
+
+    background:#4B1F78;
+
+    color:white;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    display:none;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.3);
+
+    transition:.3s;
+
+}
+
+#topo:hover{
+
+    background:#FFD54F;
+
+    color:#4B1F78;
+
+}
+
+/* ===========================
+   ANIMAÇÕES
+=========================== */
+
+.card{
+
+    animation:aparecer .8s ease;
+
+}
+
+@keyframes aparecer{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
     }
 
-    .login-box h2{
-        font-size:22px;
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
     }
 
-    .input-group input{
-        font-size:16px;
-    }
+}
 
-    .login-btn{
-        width:100%;
-        max-width:250px;
-        font-size:22px;
-    }
+.botao{
+
+    transition:.4s;
+
+}
+
+.botao:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* ===========================
+   RESPONSIVIDADE
+=========================== */
+
+@media(max-width:900px){
+
+header{
+
+    flex-direction:column;
+
+    height:auto;
+
+    padding:20px;
+
+}
+
+nav ul{
+
+    flex-direction:column;
+
+    text-align:center;
+
+    margin:20px 0;
+
+}
+
+.banner{
+
+    height:420px;
+
+}
+
+.banner h1{
+
+    font-size:36px;
+
+}
+
+.banner p{
+
+    font-size:18px;
+
+}
+
+.sobre{
+
+    flex-direction:column;
+
+}
+
+.cards{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#eee;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#4B1F78;
+
+    border-radius:10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#31124f;
+
+}
+/* ===== ANIMAÇÃO ===== */
+
+.card,
+.sobre,
+.mapa{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:.8s;
+
+}
+
+.mostrar{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/* ===== MODO ESCURO ===== */
+
+.dark{
+
+    background:#121212;
+
+    color:white;
+
+}
+
+.dark header{
+
+    background:#1e1e1e;
+
+}
+
+.dark .card{
+
+    background:#252525;
+
+    color:white;
+
+}
+
+.dark footer{
+
+    background:#111;
+
+}
+
+/* ===== MENU MOBILE ===== */
+
+#menuMobile{
+
+    display:none;
+
+}
+
+@media(max-width:900px){
+
+#menuMobile{
+
+display:block;
+
+background:#FFD54F;
+
+color:#4B1F78;
+
+border:none;
+
+padding:10px 15px;
+
+border-radius:8px;
+
+cursor:pointer;
+
+}
+
+nav{
+
+display:none;
+
+}
+
+nav.ativo{
+
+display:block;
+
+width:100%;
+
+text-align:center;
+
+margin-top:20px;
+
+}
+
+nav.ativo ul{
+
+display:flex;
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+}
+
+/* ===== BOTÃO MODO ESCURO ===== */
+
+#modoEscuro{
+
+position:fixed;
+
+right:25px;
+
+bottom:100px;
+
+width:50px;
+
+height:50px;
+
+border:none;
+
+border-radius:50%;
+
+background:#4B1F78;
+
+color:white;
+
+cursor:pointer;
+
+font-size:20px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.3);
+
 }
